@@ -1,0 +1,15 @@
+
+<div *ngIf="missionDetail" style="border:3px solid #009879;">
+    <h2>Mission Detail Component</h2>
+    <br>
+    <h3>{{missionDetail.mission_name | uppercase}}</h3>
+    <div><span>Mission Name:</span>{{missionDetail.mission_name}}</div>
+    <div><span>Launch Year:</span>{{missionDetail.launch_year}}</div>
+    <h3>Rocket</h3>
+    <div><span>Name:</span>{{missionDetail.rocket.rocket_name}}</div>
+    <div><span>Type:</span>{{missionDetail.rocket.rocket_type}}</div>
+    <h3>Launch Site</h3>
+    <div><span>Name:</span>{{missionDetail.launch_site.site_name_long}}</div>
+    <h3>Launch Details</h3>
+    <div><span></span>{{missionDetail.details}}</div>
+  </div>
